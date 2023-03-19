@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Lab4_1lan2 {
+public class Lab4 {
     ////    =====MENU======
 //////1. Add number into ArrayList
 //////2. Print numbers
