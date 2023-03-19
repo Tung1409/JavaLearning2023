@@ -1,6 +1,6 @@
 package main.java.lession_09;
 
-import lab_07.SalaryController;
+//import lab_07.SalaryController;
 
 import java.util.ArrayList;
 

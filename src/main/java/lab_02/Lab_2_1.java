@@ -9,8 +9,8 @@ public class Lab_2_1 {
         float userHeight = scanner.nextFloat();
         System.out.println("Please input your weight(kg): ");
         float userWeight = scanner.nextFloat();
-        float userBMI = userWeight/( userHeight * 2 );
-    //<18.5 || 18.5 - 24.9 || 25 -29.9 || > 30
+        float userBMI = userWeight / (userHeight * 2);
+        //<18.5 || 18.5 - 24.9 || 25 -29.9 || > 30
         System.out.printf("Your BMI is: %f\n", userBMI);
 
         if (userBMI <= 18.5) {

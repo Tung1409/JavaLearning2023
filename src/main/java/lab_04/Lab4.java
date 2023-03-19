@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Lab4_1lan2 {
+public class Lab4 {
     ////    =====MENU======
 //////1. Add number into ArrayList
 //////2. Print numbers
@@ -61,7 +61,6 @@ public class Lab4_1lan2 {
     private static void getMinimumNumber(List<Integer> userList) {
         if (userList.isEmpty()) {
             System.out.println("Your list is empty");
-            return;
         } else {
             int minimumNumber = userList.get(0);
             for (int i = 0; i < userList.size(); i++) {

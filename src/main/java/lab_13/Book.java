@@ -2,23 +2,23 @@ package main.java.lab_13;
 
 public class Book {
 
-    private int ISBN;
+    private String ISBN;
     private String title;
     private String author;
     private int year;
 
-    public Book(int ISBN, String title, String author, int year) {
+    public Book(String ISBN, String title, String author, int year) {
         this.ISBN = ISBN;
         this.title = title;
         this.author = author;
         this.year = year;
     }
 
-    public int getISBN() {
+    public String getISBN() {
         return ISBN;
     }
 
-    public void setISBN(int ISBN) {
+    public void setISBN(String ISBN) {
         this.ISBN = ISBN;
     }
 
@@ -49,7 +49,7 @@ public class Book {
     @Override
     public String toString() {
         return "Book{" +
-                "ISBN=" + ISBN +
+                "ISBN='" + ISBN + '\'' +
                 ", title='" + title + '\'' +
                 ", author='" + author + '\'' +
                 ", year=" + year +
