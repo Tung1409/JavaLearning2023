@@ -1,29 +1,18 @@
 package main.java.lab_6;
 
 public class Lab6_1 {
-    //Given input string: "2hrs and 5 minutes"
-    //Please calculate how many minutes in total
     public static void main(String[] args) {
-        int totalMinutes = 0;
+        int totalMinutes;
         String inputStr = "2hrs and 5 minutes";
-        System.out.println(inputStr.indexOf("hrs"));
-//        int indexBeforehrs = inputStr.indexOf("hrs") - 1;
-//        System.out.println(indexBeforehrs);
-//        int hrsNumber =  Integer.valueOf(indexBeforehrs);
-//        System.out.println(hrsNumber);
+        String[] splitStr = inputStr.split("and");
 
-        String hourNumStr = inputStr.substring(0, inputStr.indexOf("hrs"));
-        System.out.println(hourNumStr);
-        int hourNumber = Integer.valueOf(hourNumStr);
-        // da xong 2hrs
-        String minuteStr = inputStr.substring(inputStr.indexOf("minutes") - 2);
-        System.out.println(minuteStr);
-        String minuteNumStr = minuteStr.substring(0, 2);
-        System.out.println(minuteNumStr);
-        int minuteNumber = Integer.valueOf(minuteNumStr);
+        String hourStr = splitStr[0].substring(0, splitStr[0].indexOf("hrs")).trim();
+        int hourNumber = Integer.parseInt(hourStr);
 
-        totalMinutes = hourNumber + minuteNumber;
+        String minuteStr = splitStr[1].substring(0, splitStr[1].indexOf("minutes")).trim();
+        int minuteNumber = Integer.parseInt(minuteStr);
+
+        totalMinutes = hourNumber*60 + minuteNumber;
         System.out.println(totalMinutes);
-        // bi loi~ khong hieu tai sao
     }
 }

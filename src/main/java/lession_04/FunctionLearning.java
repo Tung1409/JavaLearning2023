@@ -17,8 +17,6 @@ return la thoat khoi method (public static void main {})
 
         public static int getARandomNumber (){
 
-
-
         int randomNumber = new SecureRandom().nextInt(Integer.MAX_VALUE);
         return randomNumber;
     }
