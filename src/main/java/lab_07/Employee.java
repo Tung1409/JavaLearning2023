@@ -9,10 +9,9 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(String name, int salary) {
+    public Employee(String name) {
         this.name = name;
-        this.salary = salary;
-    }
+}
 
     public String getName() {
         return name;

@@ -11,11 +11,11 @@ public class Lab7_1 {
 //    For example, company has 3 FTE and 2 contractor
 
     public static void main(String[] args) {
-        Employee firstFTE = new FullTimeEmployee("firstFTE", 50000);
-        Employee secondFTE = new FullTimeEmployee("secondFTE", 50000);
-        Employee thirdFTE = new FullTimeEmployee("thirdFTE", 50000);
-        Employee firstCE = new ContractEmployee("firstCE", 40000);
-        Employee secondCE = new ContractEmployee("secondCE", 40000);
+        Employee firstFTE = new FullTimeEmployee("firstFTE");
+        Employee secondFTE = new FullTimeEmployee("secondFTE");
+        Employee thirdFTE = new FullTimeEmployee("thirdFTE");
+        Employee firstCE = new ContractEmployee("firstCE");
+        Employee secondCE = new ContractEmployee("secondCE");
         List<Employee> EmployeeList = new ArrayList<>();
         EmployeeList.add(firstFTE);
         EmployeeList.add(secondFTE);
@@ -28,13 +28,4 @@ public class Lab7_1 {
 
     }
 
-//    private static int getTotalSalary(List<Employee> employeeList) {
-//        int totalSalary = 0;
-//
-//        for (Employee employee : employeeList) {
-//            totalSalary = totalSalary + employee.getSalary();
-//        }
-//        System.out.println(totalSalary);
-//        return totalSalary;
-//    }
 }
